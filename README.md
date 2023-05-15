@@ -166,17 +166,19 @@ document.render(data, "demo.docx")
 
 - style：空
 
-- 示例：
+- 示例1：
 
 ```json
-# 示例1
 {
     "type": "front_cover",
     "value": "/home/cover.jpg",
     "style": ""
 }
+```
 
-# 示例2
+- 示例2：
+
+```json
 {
     "type": "front_cover",
     "value": "base64;png;base64xxxxxxx",
@@ -198,21 +200,21 @@ document.render(data, "demo.docx")
 
 ```json
 {
-    'type': 'paragraph',
-    'value': '▶ 此患者外周血中未检测到HRR通路及遗传性肿瘤关键基因存在胚系致病或可能致病变异；',
-    'style':
+    "type": "paragraph",
+    "value": "▶ 此患者外周血中未检测到HRR通路及遗传性肿瘤关键基因存在胚系致病或可能致病变异；",
+    "style":
     {
-        'paragraph':
+        "paragraph":
         {
-            'alignment': 3,
-            'space_before': 1,
-            'space_after': 1
+            "alignment": 3,
+            "space_before": 1,
+            "space_after": 1
         },
-        'font':
+        "font":
         {
-            'bold': 'False',
-            'name': '微软雅黑',
-            'size': 10
+            "bold": "False",
+            "name": "微软雅黑",
+            "size": 10
         }
     }
 }
@@ -240,82 +242,82 @@ document.render(data, "demo.docx")
 
 ```json
 {
-    'type': 'table',
-    'value': [
-        ['体系致病或可能致病变异', '~~', '~~', '~~', '~~'],
-        ["未检测到该患者肿瘤组织样本中存在<r italic='True'>BRCA</r>基因体系致病或可能致病变异。", '~~', '~~', '~~', '']
+    "type": "table",
+    "value": [
+        ["体系致病或可能致病变异", "~~", "~~", "~~", "~~"],
+        ["未检测到该患者肿瘤组织样本中存在<r italic="True">BRCA</r>基因体系致病或可能致病变异。", "~~", "~~", "~~", "]
     ],
-    'style': [
+    "style": [
     {
-        'selectors': ['row.1', "cell.1.1", "column.1"],
-        'style':
+        "selectors": ["row.1", "cell.1.1", "column.1"],
+        "style":
         {
-            'shading': '#007537',
-            'font':
+            "shading": "#007537",
+            "font":
             {
-                'color': '#ffffff',
-                'bold': 'True',
-                'size': 11
+                "color": "#ffffff",
+                "bold": "True",
+                "size": 11
             },
-            'margin':
+            "margin":
             {
-                'start': 113,
-                'top': 113,
-                'end': 113,
-                'bottom': 113
+                "start": 113,
+                "top": 113,
+                "end": 113,
+                "bottom": 113
             }
         }
     },
     {
-        'selectors': ['table'],
-        'style':
+        "selectors": ["table"],
+        "style":
         {
-            'alignment': 1,
-            'border':
+            "alignment": 1,
+            "border":
             {
-                'top':
+                "top":
                 {
-                    'sz': 6,
-                    'val': 'single',
-                    'color': '#000000'
+                    "sz": 6,
+                    "val": "single",
+                    "color": "#000000"
                 },
-                'bottom':
+                "bottom":
                 {
-                    'sz': 6,
-                    'val': 'single',
-                    'color': '#000000'
+                    "sz": 6,
+                    "val": "single",
+                    "color": "#000000"
                 },
-                'start':
+                "start":
                 {
-                    'sz': 6,
-                    'val': 'single',
-                    'color': '#000000'
+                    "sz": 6,
+                    "val": "single",
+                    "color": "#000000"
                 },
-                'end':
+                "end":
                 {
-                    'sz': 6,
-                    'val': 'single',
-                    'color': '#000000'
+                    "sz": 6,
+                    "val": "single",
+                    "color": "#000000"
                 }
             },
-            'paragraph':
+            "paragraph":
             {
-                'alignment': 1,
-                'space_before': 1,
-                'space_after': 1
+                "alignment": 1,
+                "space_before": 1,
+                "space_after": 1
             },
-            'font':
+            "font":
             {
-                'name': '微软雅黑',
-                'size': '8'
+                "name": "微软雅黑",
+                "size": "8"
             },
-            'vertical_alignment': 1,
-            'margin':
+            "vertical_alignment": 1,
+            "margin":
             {
-                'start': 113,
-                'top': 113,
-                'end': 113,
-                'bottom': 113
+                "start": 113,
+                "top": 113,
+                "end": 113,
+                "bottom": 113
             }
         }
     }]
@@ -339,29 +341,29 @@ document.render(data, "demo.docx")
 
 ```json
 {
-    'type': 'header',
-    'value': "<pic src='logo.png' height='720000'></pic>\n检测报告单",
-    'style':
+    "type": "header",
+    "value": "<pic src='logo.png' height='720000'></pic>\n检测报告单",
+    "style":
     {
-        'odd_font':
+        "odd_font":
         {
-            'bold': 'False',
-            'name': '微软雅黑',
-            'size': 10
+            "bold": "False",
+            "name": "微软雅黑",
+            "size": 10
         },
-        'odd_paragraph':
+        "odd_paragraph":
         {
-            'alignment': 1
+            "alignment": 1
         },
-        'even_font':
+        "even_font":
         {
-            'bold': 'False',
-            'name': '微软雅黑',
-            'size': 10
+            "bold": "False",
+            "name": "微软雅黑",
+            "size": 10
         },
-        'even_paragraph':
+        "even_paragraph":
         {
-            'alignment': 1
+            "alignment": 1
         }
     }
 }
