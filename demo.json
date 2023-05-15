@@ -1,0 +1,104 @@
+[
+    {
+        "type": "paragraph",
+        "value": "XXXX医院检验科\n<r bold='False' size='10' underline='True'><r italic='True'>BRCA1/2</r>平台检测报告</r>",
+        "style":
+            {
+                "paragraph":
+                {
+                    "alignment": 1
+                },
+                "font":
+                {
+                    "bold": "True",
+                    "name": "微软雅黑",
+                    "size": 16
+                }
+            }
+	},
+    {
+        "type": "paragraph",
+        "value": "",
+        "style": ""
+    },
+    {
+        "type": "paragraph",
+        "value": "基本信息",
+        "style":
+            {
+                "paragraph":
+                {
+                    "alignment": 0,
+                    "outline_lvl": "1"
+                },
+                "font":
+                {
+                    "bold": "True",
+                    "name": "微软雅黑",
+                    "size": 12
+                }
+            }
+    },
+    {
+    "type": "table",
+    "value": [
+        ["姓名", "xxx", "性别", "xx", "年龄", "xx"],
+        ["住院号", "xx", "病理号", "xx", "送检科室", "xx"]
+    ],
+    "style": [
+        {
+            "selectors": ["table"],
+            "style":
+            {
+                "alignment": 1,
+                "border":
+                {
+                    "top":
+                    {
+                        "sz": 6,
+                        "val": "single",
+                        "color": "#000000"
+                    },
+                    "bottom":
+                    {
+                        "sz": 6,
+                        "val": "single",
+                        "color": "#000000"
+                    },
+                    "start":
+                    {
+                        "sz": 6,
+                        "val": "single",
+                        "color": "#000000"
+                    },
+                    "end":
+                    {
+                        "sz": 6,
+                        "val": "single",
+                        "color": "#000000"
+                    }
+                },
+                "paragraph":
+                {
+                    "alignment": 1,
+                    "space_before": 1,
+                    "space_after": 1
+                },
+                "font":
+                {
+                    "name": "微软雅黑",
+                    "size": "8"
+                },
+                "vertical_alignment": 1,
+                "margin":
+                {
+                    "start": 113,
+                    "top": 113,
+                    "end": 113,
+                    "bottom": 113
+                }
+            }
+        }
+    ]
+	}
+]
